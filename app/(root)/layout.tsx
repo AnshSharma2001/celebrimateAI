@@ -1,6 +1,12 @@
 import { Navbar } from "@/components/navbar";
 import { Sidebar } from "@/components/sidebar";
 import { checkSubscription } from "@/lib/subscription";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "CelebrimateAI - Home",
+  description: "Talk to your idols with AI.",
+};
 
 const RootLayout = async ({ children }: { children: React.ReactNode }) => {
   const isPro = await checkSubscription();
