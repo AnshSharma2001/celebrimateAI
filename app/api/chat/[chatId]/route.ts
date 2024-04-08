@@ -1,3 +1,6 @@
+export const maxDuration = 300;
+export const dynamic = "force-dynamic";
+
 import dotenv from "dotenv";
 import { StreamingTextResponse, LangChainStream } from "ai";
 import { auth, currentUser } from "@clerk/nextjs";
